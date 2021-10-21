@@ -13,6 +13,7 @@ def call(body) {
     body()
 
     def generalBean = new GeneralBean(
+        type: pipelineParams.type,
         gitUrl: pipelineParams.gitUrl,
         branch: pipelineParams.branch,
         credentials: pipelineParams.credentials
