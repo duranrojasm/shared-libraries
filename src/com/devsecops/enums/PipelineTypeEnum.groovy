@@ -2,7 +2,7 @@ package com.devsecops.enums
 
 enum PipelineTypeEnum {
     //Type enum
-    SYMPHONY('symphony', 'symphonyPipeline'),
+    SYMPHONY('symphony', 'symphonyPipeline')
 
     PipelineTypeEnum(String id, String func) {
         this.id = id
