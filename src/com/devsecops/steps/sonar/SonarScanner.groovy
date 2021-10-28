@@ -1,4 +1,4 @@
-package com.devsecops.steps
+package com.devsecops.steps.sonar
 
 class SonarScanner extends StepAbstract {
     String source = './'
