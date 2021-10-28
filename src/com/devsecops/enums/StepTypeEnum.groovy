@@ -1,6 +1,8 @@
 package com.devsecops.enums
 
 import com.devsecops.steps.*
+import com.genesis.steps.sonar.SonarScanner
+
 
 /**
  * [STAGE]_[TYPE]
