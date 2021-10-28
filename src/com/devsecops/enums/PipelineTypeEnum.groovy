@@ -2,6 +2,7 @@ package com.devsecops.enums
 
 enum PipelineTypeEnum {
     //Type enum
+    DEFAULT('default', 'scriptedPipeline'),
     SYMPHONY('symphony', 'symphonyPipeline')
 
     PipelineTypeEnum(String id, String func) {
