@@ -22,14 +22,6 @@ def call(GeneralBean generalBean, NodeLabel nodeLabel) {
             ENV = "${params.ENV}"
         }
         stages {
-            stage('CleanWorkspace') {
-                steps {
-                    cleanWs(deleteDirs: true, patterns: [[
-                                pattern: "${generalBean.getWorkspaceSuffixPath()}/**",
-                                type: 'INCLUDE'
-                    ]])
-                }
-            }
             stage('Checkout') {
                 steps {
                     script {
