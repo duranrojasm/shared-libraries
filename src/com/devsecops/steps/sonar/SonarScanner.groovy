@@ -8,7 +8,7 @@ class SonarScanner extends StepAbstract {
 
     void run() {
         root.dir(this.source) {
-            def scannerHome = tool 'sonarQubeScanner46'
+            def scannerHome = root.tool 'sonarQubeScanner46'
             root.withSonarQubeEnv ('sonarqube') {
                 root.sh "${scannerHome}/bin/sonar-scanner"
                 root.sh "${this.command}"
