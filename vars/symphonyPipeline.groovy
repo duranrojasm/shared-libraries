@@ -27,7 +27,6 @@ def call(GeneralBean generalBean, NodeLabel nodeLabel) {
                     script {
                         generalBean.setWorkspace(env.WORKSPACE)
                         generalBean.setEnvironment(ENV)
-                        generalBean.setBranch(env.BRANCH)
                         pipelineFlow = new PipelineFlow(root: this, general: generalBean)
                         pipelineFlow.downloadSources().init()
                     }
