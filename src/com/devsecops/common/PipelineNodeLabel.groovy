@@ -11,7 +11,12 @@ class PipelineNodeLabel {
         if (items) {
             return
         }
-        // items.put()
+        items.put(PipelineTypeEnum.DEFAULT,
+            new NodeLabel( label: NodeLabelEnum.MASTER.value)
+        )
+        items.put(PipelineTypeEnum.SYMPHONY,
+            new NodeLabel( label: NodeLabelEnum.MASTER.value)
+        )
     }
 
     static NodeLabel getItem(PipelineTypeEnum type) {

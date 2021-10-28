@@ -2,7 +2,8 @@ package com.devsecops.enums
 
 enum StageEnum {
     // STAGE(id, func)
-    CHECKOUT('checkout', 'Checkout')
+    CHECKOUT('checkout', 'Checkout'),
+    SCAN('scan', 'Scan')
 
     final String id
     final String name

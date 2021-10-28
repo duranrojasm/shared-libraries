@@ -8,6 +8,8 @@ import com.devsecops.steps.*
 enum StepTypeEnum {
     COMMAND(Command.class), // Por defecto cuando no encuentra [TYPE]
     //SONAR_CODE
+    /** SCAN **/
+    SCAN_SONAR(SonarScanner.class)
 
     StepTypeEnum(Class value) {
         this.value = value

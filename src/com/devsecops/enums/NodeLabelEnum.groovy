@@ -1,7 +1,7 @@
 package com.devsecops.enums
 
 enum NodeLabelEnum {
-    MASTER('master'),
+    MASTER('master')
     //Slaves...
 
 
