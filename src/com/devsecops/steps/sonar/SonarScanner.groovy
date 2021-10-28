@@ -1,5 +1,7 @@
 package com.devsecops.steps.sonar
 
+import com.devsecops.steps.StepAbstract
+
 class SonarScanner extends StepAbstract {
     String source = './'
     String command
