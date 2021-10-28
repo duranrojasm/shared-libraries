@@ -24,7 +24,6 @@ abstract class FlowAbstract {
     }
 
     FlowAbstract downloadSources() {
-        root.echo "entro"
         root.dir(general.getCustomWorkspace()) {
             root.utils.downloadSources(
                 this.general.getBranch(),
