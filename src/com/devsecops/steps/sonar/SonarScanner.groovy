@@ -10,8 +10,8 @@ class SonarScanner extends StepAbstract {
         root.dir(this.source) {
             def scannerHome = root.tool 'sonarQubeScanner46'
             root.withSonarQubeEnv ('sonarqube') {
-                //root.sh "${scannerHome}/bin/sonar-scanner"
-                root.sh "${this.command}"
+                root.sh "${scannerHome}/bin/sonar-scanner ${this.command}"
+                //root.sh "${this.command}"
             }
             root.timeout (time: 10, unit: 'MINUTES' ) {
                 root.waitForQualityGate abortPipeline: true
